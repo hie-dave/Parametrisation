@@ -38,3 +38,5 @@ def grab_trait(trait_name, PFT_index):
 for i in range(0,22):
     grab_trait('leaf_lifespan', i)
     grab_trait('leaf_mass_per_area',i)
+
+### NEED TO MERGE PFTs BEFORE GETTING STATS
