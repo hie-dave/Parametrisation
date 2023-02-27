@@ -15,7 +15,7 @@ def grab_trait(trait_name, PFT_index):
     ### Get list of Victorian PFTs
     PFT_list = df_PFT.PFT.drop_duplicates().to_list()
     
-    ### Get single PFT
+    ### Get PFT of interest
     PFT = PFT_list[PFT_index]
     
     ### Get all taxa within PFT
@@ -24,7 +24,7 @@ def grab_trait(trait_name, PFT_index):
     ### Get all traits for PFT
     PFT_traits = df_trait[df_trait['taxon_name'].isin(PFT_taxa)]
     
-    ### Get specific trait for PFT
+    ### Get trait of interest for PFT
     PFT_trait_name = PFT_traits[PFT_traits['trait_name']==trait_name]
     
     ### Print info: Which PFT, are some from manipulation experiments?
