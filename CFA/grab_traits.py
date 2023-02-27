@@ -40,3 +40,4 @@ for i in range(0,22):
     grab_trait('leaf_mass_per_area',i)
 
 ### NEED TO MERGE PFTs BEFORE GETTING STATS
+### Filter for lat and lon?
